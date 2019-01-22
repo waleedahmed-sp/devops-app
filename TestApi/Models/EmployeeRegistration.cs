@@ -34,7 +34,7 @@ namespace TestApi.Models
             for (int i = 0; i < employeeList.Count; i++)
             {
                 Employee emp = employeeList.ElementAt(i);
-                if (emp.ID.Equals(emp.ID))
+                if (emp.EmployeeID.Equals(emp.EmployeeID))
                 {
                     employeeList.RemoveAt(i);//update the new record
                     return "Delete successful";
@@ -51,7 +51,7 @@ namespace TestApi.Models
             for (int i = 0; i < employeeList.Count; i++)
             {
                 Employee empl = employeeList.ElementAt(i);
-                if (empl.ID.Equals(emp.ID))
+                if (empl.EmployeeID.Equals(emp.EmployeeID))
                 {
                     employeeList[i] = emp;//update the new record
                     return "Update successful";

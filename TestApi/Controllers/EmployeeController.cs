@@ -13,7 +13,7 @@ namespace TestApi.Controllers
         [HttpGet]
         public List<Employee> GetAllEmployee()
         {
-            return EmployeeRegistration.getInstance().getAllEmployee();
+           return EmployeeRegistration.getInstance().getAllEmployee();
         }
 
         [HttpPost]
@@ -24,7 +24,7 @@ namespace TestApi.Controllers
             EmployeeRegistration.getInstance().Add(empregd);
             empregreply.Name = empregd.Name;
             empregreply.Age = empregd.Age;
-            empregreply.ID = empregd.ID;
+            empregreply.ID = empregd.EmployeeID;
             empregreply.registrationStatus = "Successful";
             return empregreply;
         }
